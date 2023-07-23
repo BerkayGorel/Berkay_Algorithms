@@ -15,20 +15,7 @@ else  :
     print(bosListe1)
 
 
-    ## 0'DAN GİRİLEN SAYIYA KADAR TAM KARE OLANLARI YAZDIRMA
 
-kucuk = int(input("Küçük sayıyı giriniz "))
-buyuk =  int(input("Büçük sayıyı giriniz "))
-ksqrt = (kucuk) ** 1/2
-var = type(ksqrt)
-bosListe=[]
-if kucuk < buyuk:
-    
-    for item in range(kucuk,buyuk+1):
-        if var == int :
-            bosListe.append(item)
-            print(bosListe)
-    
         
 
 
