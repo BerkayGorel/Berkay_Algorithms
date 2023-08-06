@@ -15,6 +15,19 @@ for k in range(len(y)):
 for m in range(len(y)):
     print(y[:-(m+1)])
 
+        ## KELİMEYİ İKİ KEZ TEKRAR EDECEK ŞEKİLDE YAZDIRMA YÖNTEMLERİNDEN BİRİ
+kelime = input("Kelimeyi giriniz: ")
+
+sayac = 0 
+basla=len(kelime)
+while sayac < len(kelime)+1:
+    print(kelime[:sayac])
+    count+=1
+while basla <= len(kelime)+1:
+    print(kelime[:basla])
+    basla-=1
+    if basla <0 :
+        break
 
         ##  İSTENEN KELİMENİN HARFLERİNİ SONDAN YAZDIRMA 
 z = input("Kelimeyi giriniz ")
@@ -23,5 +36,5 @@ for n in range(len(z)+1):
     print(z[:(-n-1)])
     
 
-
+        ## 
     
