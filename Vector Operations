@@ -1,0 +1,18 @@
+from random import randrange
+u , v = [] , []                       
+triple_u , minus2_v = [],[]
+vector_summa , dot_product = [] , []
+
+for i in range(8):                    # We set the vectors such that their entries integer and randomly between -10 and 10 (arbitrary)
+    u.append(randrange(-10,11))
+    v.append(randrange(-10,11))
+    vector_summa.append(u[i]+v[i])    # We add the vectors as correspond entries
+    inner = u[i]*v[i]                 # We define the inner product, i.e dot product means that addition of multiplication corresponding entries
+    dot_product.append(inner)
+    triple_u.append(3*u[i])            # We multiply the vectors by scalars
+    minus2_v.append(-2*v[i])
+    
+print("vector u=",u,"vector v=",v,"\n"
+"3u=",triple_u,"(-2)v=",minus2_v,"\n"
+"vector summation=",vector_summa,"\n"
+"dot product of vectors = ",dot_product)
