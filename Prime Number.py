@@ -1,4 +1,4 @@
-                                        ##  CHECKKING THE ENTERED NUMBER WHETHER PRIME OR NOT
+                                        ##  CHECKING THE ENTERED NUMBER WHETHER PRIME OR NOT
 
 while True:
     count = 1
