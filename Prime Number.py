@@ -1,19 +1,23 @@
                                         ##  CHECKING THE ENTERED NUMBER WHETHER PRIME OR NOT
 
-while True:
-    count = 1
+number = int(input("Type the number: "))
+N = int((number)**(1/2))
+isPrime = True
+
+for i in range(2,N+1,2):
+    if N % i == 0:
+        isPrime = False
+        break
     
-    number = int(input("Bir doğal sayı giriniz "))
-    if number % 2 == 0 :
-        print("Sayınız asal DEĞİL")
-        continue
-    
-    while count < number:
-        count +=2
-        if number % count == 0 :
-            print("Sayınız asal DEĞİL")
-            break
-        else:
-            print("Sayınız asal")
-            break
+if isPrime == False:
+    print(number,"is not prime")
+else:
+    print(number,"is prime")
+      
+        
+
+
+
+
+
     
