@@ -13,8 +13,8 @@ for i in range(1,N+1):
     if num % i == 0:
         divisors.append(int(i))
         divisors.append(int(num/i))
-for item in divisors:
-    summa+=divisors
+for item in range (len(divisors)-1):
+    summa+=divisors[item]
 if summa == num:
     print(num,"is a perfect number")
 else:
